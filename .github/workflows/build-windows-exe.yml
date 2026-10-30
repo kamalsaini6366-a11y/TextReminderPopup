@@ -25,7 +25,7 @@ jobs:
         run: python -m pip install --upgrade pip pyinstaller
 
       - name: Build standalone EXE
-        run: python -m PyInstaller --onefile --windowed --name TextReminderPopup text_reminder_popup.py
+        run: python -m PyInstaller --onefile --windowed --name TextReminderPopup TextReminderPopup_WindowsBuild/text_reminder_popup.py
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
